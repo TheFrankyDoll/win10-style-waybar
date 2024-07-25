@@ -19,7 +19,7 @@ Waybar config to make Windows 10 refugees feel at home. Works well with [Hyprlan
 * Scroll on workspaces buttons to move through them. It calls `hyprctl dispatch workspace r±1`, works in Hyprland only.
 * Click on taskbar button to switch to app, middle-click to close it.
 * Click on speaker sign to try running [pwvucontrol](https://github.com/saivert/pwvucontrol) - pipewire version of [pavucontrol](https://github.com/pulseaudio/pavucontrol)
-* Clock's tooltip will expose waybar's calendar - it's not the prettiest, but it does it job!
+* Clock's tooltip will expose waybar's calendar - it's not the prettiest, but it does its job!
 
 ### Bluring background! (on Hyprland)
 Waybar uses GTK3 and does not provide any way add blur by default. ([unless you're from the future and use GTK4](https://github.com/Alexays/Waybar/issues/2815))
@@ -38,4 +38,4 @@ Waybar may also use some variables from your GTK theme, put `* { all: unset; }` 
 
 * For some reason selection doesn't work if you put mouse at the very bottom of the screen - to fix this, I used a dirty hack of making waybar 1 pixel larger (41px total) and setting `"margin-bottom": -1` in the `config` file. This works fine - still weird you have to do this.
 
-* Unfortunately I couldn't find a way to limit taskbar's elements length, so opening to many apps will push all of the right elements out of screen.
+* Unfortunately I couldn't find a way to limit taskbar's elements length, so opening too many apps will push all of the right elements out of screen.
