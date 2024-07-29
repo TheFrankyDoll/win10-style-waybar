@@ -139,8 +139,8 @@
         "scroll-step": 10,
         "format": "{icon}",
         "tooltip-format": "{volume}%",
+        "format-muted": " ",
         "format-icons": {
-            "format-muted": " ",
             "default": [
                 " ",
                 " ",
