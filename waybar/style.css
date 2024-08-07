@@ -114,6 +114,19 @@ tooltip label{
 	padding:3px;
 }
 
+#temperature {
+	color: transparent;
+	font-size: 0px;
+	transition: all 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+#temperature.critical {
+	padding-right: 3px;
+	color: @warning_color;
+	font-size: initial;
+	border-bottom: 3px dashed @warning_color;
+	transition: all 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
 #window {
   border-radius: 10px;
   margin-left: 20px;

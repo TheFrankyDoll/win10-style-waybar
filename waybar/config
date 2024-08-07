@@ -15,6 +15,7 @@
     "modules-center": [],
     "modules-right": [
         "cpu",
+        "temperature",
         "memory",
         "disk",
         "tray",
@@ -45,13 +46,21 @@
         "format": "  {usage}%",
         "max-length": 10
     },
+    "temperature": {
+        "hwmon-path-abs": "/sys/devices/platform/coretemp.0/hwmon",
+        "input-filename": "temp2_input",
+        "critical-threshold": 75,
+        "tooltip": false,
+        "format-critical": "({temperatureC}°C)",
+        "format": "({temperatureC}°C)"
+    },
     "disk": {
         "interval": 30,
         "format": "󰋊 {percentage_used}%",
         "path": "/",
         "tooltip": true,
         "unit": "GB",
-        "tooltip-format": "Available {free} of {total}"
+        "tooltip-format":  "Available {free} of {total}"
     },
     "memory": {
         "interval": 10,
